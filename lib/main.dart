@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:to_do_list/screens/homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,14 +15,8 @@ class MyApp extends StatelessWidget {
           textTheme: GoogleFonts.nunitoSansTextTheme(
         Theme.of(context).textTheme,
       )),
-      home: Scaffold(
-        body: Container(
-          child: Center(
-              child: Image(
-            image: AssetImage('assets/images/logo.png'),
-          )),
-        ),
-      ),
+      home: Homepage(),
+      //home page eka wenama heduwa.
     );
   }
 }
